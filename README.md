@@ -1,0 +1,2 @@
+# AutoTranslateMod
+这是一个自动翻译Localizer Mod导出的原始文本的程序，首先将导出后的文本放入
