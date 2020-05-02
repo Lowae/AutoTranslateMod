@@ -11,8 +11,8 @@ import java.util.regex.Pattern
 import kotlin.random.Random
 
 const val BAIDU_API = "http://api.fanyi.baidu.com/api/trans/vip/translate"
-const val APPID = "20200411000416920"
-const val KEY = "zuyqaKArBPYesjPTDbZv"
+const val APPID = "百度APPID"
+const val KEY = "百度KEy"
 const val USER_AGENT =
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
 const val SRC_DIR = "src/srcFiles"
