@@ -1,5 +1,6 @@
 # AutoTranslateMod
-这是一个自动翻译Localizer Mod导出的原始文本的程序，首先将导出后的文本放入srcFiles目录中
+这是一个自动翻译Localizer Mod导出的原始文本的程序
+首先，先到http://api.fanyi.baidu.com/ 注册百度开发者账号得到Appid和密钥，填入Main.kt的APPID和KEY中，然后将导出后的文本放入srcFiles目录中
 <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/1.PNG" height="330" width="190" >
 </div>
