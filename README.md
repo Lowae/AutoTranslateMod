@@ -12,3 +12,10 @@
 <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/3.PNG" >
 </div>
+效果图
+<div align="center">
+<img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/4.PNG" >
+</div>
+<div align="center">
+<img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/5.PNG" >
+</div>
