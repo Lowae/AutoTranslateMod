@@ -222,7 +222,7 @@ class Translate(private val apiType: ApiType) {
                             val sb = StringBuilder()
                             val arr = JSONArray(JSONObject(it.nextOrigin).optString("trans_result"))
                             for (item in 0 until arr.length()) {
-                                sb.append(JSONObject(arr.getString(item)).optString("dst"))
+                                sb.append(JSONObject(arr.get(item).toString()).optString("dst"))
                                 if (item != arr.length() - 1) {
                                     sb.append("\n")
                                 }
