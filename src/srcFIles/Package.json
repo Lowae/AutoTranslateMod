@@ -1,0 +1,19 @@
+{
+  "Name": "Laugicality",
+  "Author": "",
+  "ModName": "Laugicality",
+  "Description": "",
+  "LocalizedModName": "Laugicality",
+  "Version": "1.0.0.0",
+  "ModVersion": "0.14.2.1",
+  "Language": "zh-Hans",
+  "FileList": [
+    "BasicItemFile",
+    "BasicNPCFile",
+    "BasicBuffFile",
+    "BasicProjectileFile",
+    "BasicPrefixFile",
+    "CustomModTranslationFile",
+    "LdstrFile"
+  ]
+}

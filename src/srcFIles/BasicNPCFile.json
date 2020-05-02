@@ -1,0 +1,358 @@
+{
+  "NPCs": {
+    "MechanicalCrawler": {
+      "Name": {
+        "Origin": "Mechanical Charger",
+        "Translation": ""
+      }
+    },
+    "MechanicalCreeper": {
+      "Name": {
+        "Origin": "Mechanical Spikinator",
+        "Translation": ""
+      }
+    },
+    "MechanicalMimic": {
+      "Name": {
+        "Origin": "Mechanical Mimic",
+        "Translation": ""
+      }
+    },
+    "MechanicalShelly": {
+      "Name": {
+        "Origin": "Mechanical Copter",
+        "Translation": ""
+      }
+    },
+    "MechanicalSlimer": {
+      "Name": {
+        "Origin": "Mechanical Creeper",
+        "Translation": ""
+      }
+    },
+    "TheAnnihilator": {
+      "Name": {
+        "Origin": "The Annihilator",
+        "Translation": ""
+      }
+    },
+    "Conductor": {
+      "Name": {
+        "Origin": "Conductor",
+        "Translation": ""
+      }
+    },
+    "Etheria": {
+      "Name": {
+        "Origin": "Etheria",
+        "Translation": ""
+      }
+    },
+    "EtheriaDecoy": {
+      "Name": {
+        "Origin": "Etherial Shadow",
+        "Translation": ""
+      }
+    },
+    "EtherialSpiralShot": {
+      "Name": {
+        "Origin": "Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "EtherialTear": {
+      "Name": {
+        "Origin": "Etherial Tear",
+        "Translation": ""
+      }
+    },
+    "TrueEtherialSpiralShot": {
+      "Name": {
+        "Origin": "True Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "TrueEtherialTear": {
+      "Name": {
+        "Origin": "True Etherial Tear",
+        "Translation": ""
+      }
+    },
+    "EtherialEoC": {
+      "Name": {
+        "Origin": "True Eye of Cthulhu",
+        "Translation": ""
+      }
+    },
+    "GearSlime": {
+      "Name": {
+        "Origin": "Gear Slime",
+        "Translation": ""
+      }
+    },
+    "MechanicalDungeonGuardian": {
+      "Name": {
+        "Origin": "Mechanical Dungeon Guardian",
+        "Translation": ""
+      }
+    },
+    "PipeSlime": {
+      "Name": {
+        "Origin": "Pipe Slime",
+        "Translation": ""
+      }
+    },
+    "RagnarHand": {
+      "Name": {
+        "Origin": "Ragnar Hand",
+        "Translation": ""
+      }
+    },
+    "SparkSlime": {
+      "Name": {
+        "Origin": "Spark Slime",
+        "Translation": ""
+      }
+    },
+    "SuperBee": {
+      "Name": {
+        "Origin": "Super Bee",
+        "Translation": ""
+      }
+    },
+    "SuperCorruptor": {
+      "Name": {
+        "Origin": "Super Corruptor",
+        "Translation": ""
+      }
+    },
+    "SuperGolemFist": {
+      "Name": {
+        "Origin": "Super Golem Fist",
+        "Translation": ""
+      }
+    },
+    "SuperHornet": {
+      "Name": {
+        "Origin": "Super Hornet",
+        "Translation": ""
+      }
+    },
+    "SuperHungry": {
+      "Name": {
+        "Origin": "Super Hungry",
+        "Translation": ""
+      }
+    },
+    "SuperIchorSpitter": {
+      "Name": {
+        "Origin": "Super Ichor Spitter",
+        "Translation": ""
+      }
+    },
+    "SuperLeechBody": {
+      "Name": {
+        "Origin": "Super Leech",
+        "Translation": ""
+      }
+    },
+    "SuperLeechHead": {
+      "Name": {
+        "Origin": "Super Leech",
+        "Translation": ""
+      }
+    },
+    "SuperLeechTail": {
+      "Name": {
+        "Origin": "Super Leech",
+        "Translation": ""
+      }
+    },
+    "SuperMechanicalCrawler": {
+      "Name": {
+        "Origin": "Super Mechanical Crawler",
+        "Translation": ""
+      }
+    },
+    "SuperMechanicalMinion": {
+      "Name": {
+        "Origin": "Super Mechanical Minion",
+        "Translation": ""
+      }
+    },
+    "SuperServant": {
+      "Name": {
+        "Origin": "Super Servant",
+        "Translation": ""
+      }
+    },
+    "SuperShark": {
+      "Name": {
+        "Origin": "Super Shark",
+        "Translation": ""
+      }
+    },
+    "SuperSlime": {
+      "Name": {
+        "Origin": "Super Slime",
+        "Translation": ""
+      }
+    },
+    "Terratome": {
+      "Name": {
+        "Origin": "Terratome",
+        "Translation": ""
+      }
+    },
+    "EtherialSpirit": {
+      "Name": {
+        "Origin": "Etherial Spirit",
+        "Translation": ""
+      }
+    },
+    "LavaTitan": {
+      "Name": {
+        "Origin": "Lava Titan",
+        "Translation": ""
+      }
+    },
+    "MagmaCaster": {
+      "Name": {
+        "Origin": "Magma Caster",
+        "Translation": ""
+      }
+    },
+    "MagmatipedeBody": {
+      "Name": {
+        "Origin": "Magmatipede",
+        "Translation": ""
+      }
+    },
+    "MagmatipedeHead": {
+      "Name": {
+        "Origin": "Magmatipede",
+        "Translation": ""
+      }
+    },
+    "MagmatipedeTail": {
+      "Name": {
+        "Origin": "Magmatipede",
+        "Translation": ""
+      }
+    },
+    "MoltenSoul": {
+      "Name": {
+        "Origin": "Molten Soul",
+        "Translation": ""
+      }
+    },
+    "MoltiochBody": {
+      "Name": {
+        "Origin": "Moltioch",
+        "Translation": ""
+      }
+    },
+    "MoltiochHead": {
+      "Name": {
+        "Origin": "Moltioch",
+        "Translation": ""
+      }
+    },
+    "MoltiochTail": {
+      "Name": {
+        "Origin": "Moltioch",
+        "Translation": ""
+      }
+    },
+    "ObsidiumDriller": {
+      "Name": {
+        "Origin": "Obsidium Driller",
+        "Translation": ""
+      }
+    },
+    "ObsidiumSkull": {
+      "Name": {
+        "Origin": "Obsidium Skull",
+        "Translation": ""
+      }
+    },
+    "TitanBlast": {
+      "Name": {
+        "Origin": "Titan Blast",
+        "Translation": ""
+      }
+    },
+    "DuneSharkron": {
+      "Name": {
+        "Origin": "Dune Sharkron",
+        "Translation": ""
+      }
+    },
+    "Hypothema": {
+      "Name": {
+        "Origin": "Hypothema",
+        "Translation": ""
+      }
+    },
+    "Ragnar": {
+      "Name": {
+        "Origin": "Ragnar",
+        "Translation": ""
+      }
+    },
+    "Andesia": {
+      "Name": {
+        "Origin": "Andesia",
+        "Translation": ""
+      }
+    },
+    "AnDio1": {
+      "Name": {
+        "Origin": "An Dio1",
+        "Translation": ""
+      }
+    },
+    "AnDio2": {
+      "Name": {
+        "Origin": "An Dio2",
+        "Translation": ""
+      }
+    },
+    "AnDio3": {
+      "Name": {
+        "Origin": "AnDio",
+        "Translation": ""
+      }
+    },
+    "AnDioLaserBall": {
+      "Name": {
+        "Origin": "Laser Ball",
+        "Translation": ""
+      }
+    },
+    "Dioritus": {
+      "Name": {
+        "Origin": "Dioritus",
+        "Translation": ""
+      }
+    },
+    "LaserBall": {
+      "Name": {
+        "Origin": "LaserBall",
+        "Translation": ""
+      }
+    },
+    "Slybertron": {
+      "Name": {
+        "Origin": "Slybertron",
+        "Translation": ""
+      }
+    },
+    "SteamTrain": {
+      "Name": {
+        "Origin": "Steam Train",
+        "Translation": ""
+      }
+    }
+  }
+}

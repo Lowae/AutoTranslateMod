@@ -1,0 +1,1684 @@
+{
+  "Projectiles": {
+    "Etherblast": {
+      "Name": {
+        "Origin": "Etherblast",
+        "Translation": ""
+      }
+    },
+    "EtherblastP2": {
+      "Name": {
+        "Origin": "Etherblast",
+        "Translation": ""
+      }
+    },
+    "EtherialPulsar": {
+      "Name": {
+        "Origin": "Etherial Pulsar",
+        "Translation": ""
+      }
+    },
+    "EtherialPulse": {
+      "Name": {
+        "Origin": "Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "EtherialWave": {
+      "Name": {
+        "Origin": "Etherial Wave",
+        "Translation": ""
+      }
+    },
+    "EtherialYeet": {
+      "Name": {
+        "Origin": "Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "QuadroBurst": {
+      "Name": {
+        "Origin": "Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "TrueEtherialPulsar": {
+      "Name": {
+        "Origin": "True Etherial Pulsar",
+        "Translation": ""
+      }
+    },
+    "TrueEtherialPulse": {
+      "Name": {
+        "Origin": "True Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "TrueEtherialYeet": {
+      "Name": {
+        "Origin": "True Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "TrueQuadroBurst": {
+      "Name": {
+        "Origin": "True Etherial Pulse",
+        "Translation": ""
+      }
+    },
+    "EtherialSpore": {
+      "Name": {
+        "Origin": "Etherial Spore",
+        "Translation": ""
+      }
+    },
+    "EtherialStinger": {
+      "Name": {
+        "Origin": "Etherial Stinger",
+        "Translation": ""
+      }
+    },
+    "FrostbiteBreath": {
+      "Name": {
+        "Origin": "Frostbite Breath",
+        "Translation": ""
+      }
+    },
+    "SlimePipe": {
+      "Name": {
+        "Origin": "Slime Pipe",
+        "Translation": ""
+      }
+    },
+    "Fireball": {
+      "Name": {
+        "Origin": "a Fireball",
+        "Translation": ""
+      }
+    },
+    "GravityFireball": {
+      "Name": {
+        "Origin": "a Fireball",
+        "Translation": ""
+      }
+    },
+    "HailProj": {
+      "Name": {
+        "Origin": "Hail",
+        "Translation": ""
+      }
+    },
+    "IceShard": {
+      "Name": {
+        "Origin": "Ice Shard",
+        "Translation": ""
+      }
+    },
+    "IceSpike": {
+      "Name": {
+        "Origin": "Ice Spark",
+        "Translation": ""
+      }
+    },
+    "Lava": {
+      "Name": {
+        "Origin": "Lava",
+        "Translation": ""
+      }
+    },
+    "LavaGeyeser": {
+      "Name": {
+        "Origin": "Lava Geyeser",
+        "Translation": ""
+      }
+    },
+    "MiniRock": {
+      "Name": {
+        "Origin": "Mini Rock",
+        "Translation": ""
+      }
+    },
+    "RockFalling": {
+      "Name": {
+        "Origin": "Falling Rock",
+        "Translation": ""
+      }
+    },
+    "RockLoose": {
+      "Name": {
+        "Origin": "a Loose Rock",
+        "Translation": ""
+      }
+    },
+    "RockLooseMini": {
+      "Name": {
+        "Origin": "a Loose Rock",
+        "Translation": ""
+      }
+    },
+    "Sandnado": {
+      "Name": {
+        "Origin": "Sandnado",
+        "Translation": ""
+      }
+    },
+    "SandnadoUp": {
+      "Name": {
+        "Origin": "Sandnado",
+        "Translation": ""
+      }
+    },
+    "SharkNeedle": {
+      "Name": {
+        "Origin": "Shark Needle",
+        "Translation": ""
+      }
+    },
+    "SharkNeedleHoming": {
+      "Name": {
+        "Origin": "Seek Needle",
+        "Translation": ""
+      }
+    },
+    "SharkronCrystalShard": {
+      "Name": {
+        "Origin": "Crystal Shard",
+        "Translation": ""
+      }
+    },
+    "SharkronMiniCrystalShard": {
+      "Name": {
+        "Origin": "Mini Crystal Shard",
+        "Translation": ""
+      }
+    },
+    "AndeBall": {
+      "Name": {
+        "Origin": "Ande Ball",
+        "Translation": ""
+      }
+    },
+    "AndeEnergy": {
+      "Name": {
+        "Origin": "Ande Energy",
+        "Translation": ""
+      }
+    },
+    "AndeLaser3": {
+      "Name": {
+        "Origin": "Ande Laser",
+        "Translation": ""
+      }
+    },
+    "AndeShard": {
+      "Name": {
+        "Origin": "Ande Shard",
+        "Translation": ""
+      }
+    },
+    "AnDioEnergy": {
+      "Name": {
+        "Origin": "AnDio Energy",
+        "Translation": ""
+      }
+    },
+    "AnDioSpiral": {
+      "Name": {
+        "Origin": "An Dio Spiral",
+        "Translation": ""
+      }
+    },
+    "AnDioSpiral2": {
+      "Name": {
+        "Origin": "AnDio Spiral",
+        "Translation": ""
+      }
+    },
+    "DioBall": {
+      "Name": {
+        "Origin": "Dio Ball",
+        "Translation": ""
+      }
+    },
+    "DioBallShot": {
+      "Name": {
+        "Origin": "Dio Ball Shot",
+        "Translation": ""
+      }
+    },
+    "DioEnergy": {
+      "Name": {
+        "Origin": "Dio Energy",
+        "Translation": ""
+      }
+    },
+    "DioEnergyHoming": {
+      "Name": {
+        "Origin": "Dio Energy Homing",
+        "Translation": ""
+      }
+    },
+    "DioShard": {
+      "Name": {
+        "Origin": "Dio Shard",
+        "Translation": ""
+      }
+    },
+    "Coginator": {
+      "Name": {
+        "Origin": "Coginator",
+        "Translation": ""
+      }
+    },
+    "CogLoose": {
+      "Name": {
+        "Origin": "a Loose Cog",
+        "Translation": ""
+      }
+    },
+    "Electroshock": {
+      "Name": {
+        "Origin": "Electroshock",
+        "Translation": ""
+      }
+    },
+    "ElectroshockP2": {
+      "Name": {
+        "Origin": "Electroshock",
+        "Translation": ""
+      }
+    },
+    "GasBall": {
+      "Name": {
+        "Origin": "Gas Ball",
+        "Translation": ""
+      }
+    },
+    "GasBallDown": {
+      "Name": {
+        "Origin": "Gas Ball",
+        "Translation": ""
+      }
+    },
+    "GasBallUp": {
+      "Name": {
+        "Origin": "Gas Ball",
+        "Translation": ""
+      }
+    },
+    "Gearikan": {
+      "Name": {
+        "Origin": "Gearikan",
+        "Translation": ""
+      }
+    },
+    "SteamStream": {
+      "Name": {
+        "Origin": "Steam Stream",
+        "Translation": ""
+      }
+    },
+    "SteamyShadow": {
+      "Name": {
+        "Origin": "Steamy Shadow",
+        "Translation": ""
+      }
+    },
+    "XOut": {
+      "Name": {
+        "Origin": "X-Out",
+        "Translation": ""
+      }
+    },
+    "ShadowBurst": {
+      "Name": {
+        "Origin": "Shadow Burst",
+        "Translation": ""
+      }
+    },
+    "BysmalTrailProj": {
+      "Name": {
+        "Origin": "Frigid",
+        "Translation": ""
+      }
+    },
+    "CrystalliteOrb": {
+      "Name": {
+        "Origin": "Crystallite",
+        "Translation": ""
+      }
+    },
+    "GoodFireball": {
+      "Name": {
+        "Origin": "Fireball",
+        "Translation": ""
+      }
+    },
+    "GoodShadowflame": {
+      "Name": {
+        "Origin": "Shadowflame",
+        "Translation": ""
+      }
+    },
+    "IceShardF": {
+      "Name": {
+        "Origin": "Ice Shard F",
+        "Translation": ""
+      }
+    },
+    "RockShard": {
+      "Name": {
+        "Origin": "Rock Shard",
+        "Translation": ""
+      }
+    },
+    "SteamTrailProj": {
+      "Name": {
+        "Origin": "Steam",
+        "Translation": ""
+      }
+    },
+    "TrueGoodFireball": {
+      "Name": {
+        "Origin": "True Fireball",
+        "Translation": ""
+      }
+    },
+    "GeneralBossSpawn": {
+      "Name": {
+        "Origin": "General Boss Spawn",
+        "Translation": ""
+      }
+    },
+    "SpawnVanillaBoss": {
+      "Name": {
+        "Origin": "Spawn Vanilla Boss",
+        "Translation": ""
+      }
+    },
+    "AndesiaStaffProjectile": {
+      "Name": {
+        "Origin": "Andesia Staff Projectile",
+        "Translation": ""
+      }
+    },
+    "Andesimite": {
+      "Name": {
+        "Origin": "Andesimite",
+        "Translation": ""
+      }
+    },
+    "BlitzBolt1": {
+      "Name": {
+        "Origin": "Blitz Bolt1",
+        "Translation": ""
+      }
+    },
+    "BlitzBolt2": {
+      "Name": {
+        "Origin": "Blitz Bolt2",
+        "Translation": ""
+      }
+    },
+    "BookSandstormBottom": {
+      "Name": {
+        "Origin": "Sandnado",
+        "Translation": ""
+      }
+    },
+    "BookSandstormUp": {
+      "Name": {
+        "Origin": "Sandnado",
+        "Translation": ""
+      }
+    },
+    "BysmalWandProjectile": {
+      "Name": {
+        "Origin": "Bysmal Blast",
+        "Translation": ""
+      }
+    },
+    "CrystillaShardProjectile": {
+      "Name": {
+        "Origin": "Crystilla Shard",
+        "Translation": ""
+      }
+    },
+    "Dioritite": {
+      "Name": {
+        "Origin": "Dioritite",
+        "Translation": ""
+      }
+    },
+    "ElectrosparkP2": {
+      "Name": {
+        "Origin": "Electrospark",
+        "Translation": ""
+      }
+    },
+    "ElectrosparkProjectile": {
+      "Name": {
+        "Origin": "Electrospark",
+        "Translation": ""
+      }
+    },
+    "LightningBall": {
+      "Name": {
+        "Origin": "Lightning Ball",
+        "Translation": ""
+      }
+    },
+    "Sandball": {
+      "Name": {
+        "Origin": "Sandball",
+        "Translation": ""
+      }
+    },
+    "SteamOfSteamworks": {
+      "Name": {
+        "Origin": "Steam of Steamworks",
+        "Translation": ""
+      }
+    },
+    "VolciteProjectile": {
+      "Name": {
+        "Origin": "Volcite Projectile",
+        "Translation": ""
+      }
+    },
+    "WarlockStaff1": {
+      "Name": {
+        "Origin": "Warlock Spiral",
+        "Translation": ""
+      }
+    },
+    "WarlockStaff2": {
+      "Name": {
+        "Origin": "Warlock Spiral",
+        "Translation": ""
+      }
+    },
+    "WarlockStaff3": {
+      "Name": {
+        "Origin": "Warlock Laser",
+        "Translation": ""
+      }
+    },
+    "Andespear": {
+      "Name": {
+        "Origin": "Andespear",
+        "Translation": ""
+      }
+    },
+    "AnDioYoProjectile": {
+      "Name": {
+        "Origin": "An Dio Yo Projectile",
+        "Translation": ""
+      }
+    },
+    "AnDioYoShot": {
+      "Name": {
+        "Origin": "AnDio Yo Shot",
+        "Translation": ""
+      }
+    },
+    "AuroraProjectile": {
+      "Name": {
+        "Origin": "Aurora Projectile",
+        "Translation": ""
+      }
+    },
+    "AuroraShard": {
+      "Name": {
+        "Origin": "Aurora Shard",
+        "Translation": ""
+      }
+    },
+    "Borealis": {
+      "Name": {
+        "Origin": "Borealis",
+        "Translation": ""
+      }
+    },
+    "DawnStar": {
+      "Name": {
+        "Origin": "Dawn Star",
+        "Translation": ""
+      }
+    },
+    "DioritusBladeProjectile": {
+      "Name": {
+        "Origin": "Dioritus Blade Projectile",
+        "Translation": ""
+      }
+    },
+    "EnginatorMProj": {
+      "Name": {
+        "Origin": "Enginator M Proj",
+        "Translation": ""
+      }
+    },
+    "FlaranceProjectile": {
+      "Name": {
+        "Origin": "Flarance Projectile",
+        "Translation": ""
+      }
+    },
+    "FrigidYoyoProjectile": {
+      "Name": {
+        "Origin": "Frigid Yoyo Projectile",
+        "Translation": ""
+      }
+    },
+    "GearIO2Projectile": {
+      "Name": {
+        "Origin": "Gear I O2 Projectile",
+        "Translation": ""
+      }
+    },
+    "GearIOProjectile": {
+      "Name": {
+        "Origin": "Gear I O Projectile",
+        "Translation": ""
+      }
+    },
+    "GoldenSword": {
+      "Name": {
+        "Origin": "Golden Sword",
+        "Translation": ""
+      }
+    },
+    "HolyBlade": {
+      "Name": {
+        "Origin": "Holy Blade",
+        "Translation": ""
+      }
+    },
+    "HolyOrigin": {
+      "Name": {
+        "Origin": "Holy Origin",
+        "Translation": ""
+      }
+    },
+    "HolyStrike": {
+      "Name": {
+        "Origin": "Holy Strike",
+        "Translation": ""
+      }
+    },
+    "ObsidiumYoyoProjectile": {
+      "Name": {
+        "Origin": "Obsidium Yoyo Projectile",
+        "Translation": ""
+      }
+    },
+    "SteamworkShankerProjectile": {
+      "Name": {
+        "Origin": "Steamwork Shanker Projectile",
+        "Translation": ""
+      }
+    },
+    "TrainScytheProjectile": {
+      "Name": {
+        "Origin": "Train Scythe Projectile",
+        "Translation": ""
+      }
+    },
+    "TrueDawnStar": {
+      "Name": {
+        "Origin": "True Dawn Star",
+        "Translation": ""
+      }
+    },
+    "TrueGoldenSword": {
+      "Name": {
+        "Origin": "True Golden Sword",
+        "Translation": ""
+      }
+    },
+    "AncientRune": {
+      "Name": {
+        "Origin": "Sandnado",
+        "Translation": ""
+      }
+    },
+    "AncientRuneUp": {
+      "Name": {
+        "Origin": "Ancient Rune Up",
+        "Translation": ""
+      }
+    },
+    "AnDioChestguardBurst": {
+      "Name": {
+        "Origin": "AnDio Chestguard Burst",
+        "Translation": ""
+      }
+    },
+    "EruptionBurst": {
+      "Name": {
+        "Origin": "Eruption Burst",
+        "Translation": ""
+      }
+    },
+    "EruptionBurstUp": {
+      "Name": {
+        "Origin": "Eruption Burst Up",
+        "Translation": ""
+      }
+    },
+    "EruptionProjectile": {
+      "Name": {
+        "Origin": "Eruption Projectile",
+        "Translation": ""
+      }
+    },
+    "ObsidiumMysticBurst": {
+      "Name": {
+        "Origin": "Thermal Crystalline",
+        "Translation": ""
+      }
+    },
+    "ShroomBurst": {
+      "Name": {
+        "Origin": "Shroom Burst",
+        "Translation": ""
+      }
+    },
+    "SteamBurst": {
+      "Name": {
+        "Origin": "Steam Burst",
+        "Translation": ""
+      }
+    },
+    "AnDioConjuration1": {
+      "Name": {
+        "Origin": "Loki Blast",
+        "Translation": ""
+      }
+    },
+    "AnDioConjuration2": {
+      "Name": {
+        "Origin": "Loki Blast",
+        "Translation": ""
+      }
+    },
+    "ChlorysConjuration1": {
+      "Name": {
+        "Origin": "Chlorys Conjuration1",
+        "Translation": ""
+      }
+    },
+    "ChlorysConjuration2": {
+      "Name": {
+        "Origin": "Chlorys Conjuration2",
+        "Translation": ""
+      }
+    },
+    "ConjurationProjectile": {
+      "Name": {
+        "Origin": "Conjuration Projectile",
+        "Translation": ""
+      }
+    },
+    "CupidBurst": {
+      "Name": {
+        "Origin": "Cupid Burst",
+        "Translation": ""
+      }
+    },
+    "CupidConjuration2": {
+      "Name": {
+        "Origin": "Cupid Conjuration2",
+        "Translation": ""
+      }
+    },
+    "CupidConjurationAngel": {
+      "Name": {
+        "Origin": "Cupid Conjuration Angel",
+        "Translation": ""
+      }
+    },
+    "CupidHoming": {
+      "Name": {
+        "Origin": "Cupid Homing",
+        "Translation": ""
+      }
+    },
+    "DionysusConjuration": {
+      "Name": {
+        "Origin": "Dionysus Conjuration",
+        "Translation": ""
+      }
+    },
+    "DionysusConjuration2": {
+      "Name": {
+        "Origin": "Dionysus Conjuration2",
+        "Translation": ""
+      }
+    },
+    "FreyaConjuration1": {
+      "Name": {
+        "Origin": "Freya Conjuration1",
+        "Translation": ""
+      }
+    },
+    "FreyaConjuration2": {
+      "Name": {
+        "Origin": "Freya Conjuration",
+        "Translation": ""
+      }
+    },
+    "FriggConjuration": {
+      "Name": {
+        "Origin": "Frigg Conjuration",
+        "Translation": ""
+      }
+    },
+    "GaiaConjuration": {
+      "Name": {
+        "Origin": "Gaia Conjuration",
+        "Translation": ""
+      }
+    },
+    "GemShard": {
+      "Name": {
+        "Origin": "Gem Shard",
+        "Translation": ""
+      }
+    },
+    "GreatGladiusConjuration1": {
+      "Name": {
+        "Origin": "Great Gladius Conjuration",
+        "Translation": ""
+      }
+    },
+    "GreatGladiusConjuration2": {
+      "Name": {
+        "Origin": "Great Gladius Conjuration2",
+        "Translation": ""
+      }
+    },
+    "HadesConjuration": {
+      "Name": {
+        "Origin": "Hades Conjuration",
+        "Translation": ""
+      }
+    },
+    "HadesGeyser": {
+      "Name": {
+        "Origin": "Hades Geyser",
+        "Translation": ""
+      }
+    },
+    "HadesGeyserBurst": {
+      "Name": {
+        "Origin": "Hades Geyser Burst",
+        "Translation": ""
+      }
+    },
+    "HallowsEveConjuration1": {
+      "Name": {
+        "Origin": "Hallows Eve Conjuration1",
+        "Translation": ""
+      }
+    },
+    "HallowsEveConjuration2": {
+      "Name": {
+        "Origin": "Hallows Eve Conjuration2",
+        "Translation": ""
+      }
+    },
+    "HallowsEveConjuration3": {
+      "Name": {
+        "Origin": "Hallows Eve Conjuration3",
+        "Translation": ""
+      }
+    },
+    "HallowsEveConjuration4": {
+      "Name": {
+        "Origin": "Hallows Eve Conjuration4",
+        "Translation": ""
+      }
+    },
+    "HermesConjuration": {
+      "Name": {
+        "Origin": "Hermes Conjuration",
+        "Translation": ""
+      }
+    },
+    "HermesConjuration1": {
+      "Name": {
+        "Origin": "Hermes Conjuration1",
+        "Translation": ""
+      }
+    },
+    "HermesConjurationHoming": {
+      "Name": {
+        "Origin": "Hermes Conjuration Homing",
+        "Translation": ""
+      }
+    },
+    "MarsConjuration": {
+      "Name": {
+        "Origin": "Mars Conjuration",
+        "Translation": ""
+      }
+    },
+    "MarsGeyeser": {
+      "Name": {
+        "Origin": "Mars Geyeser",
+        "Translation": ""
+      }
+    },
+    "MarsGeyeserBurst": {
+      "Name": {
+        "Origin": "Mars Geyeser Burst",
+        "Translation": ""
+      }
+    },
+    "OrionConjuration": {
+      "Name": {
+        "Origin": "Orion Conjuration",
+        "Translation": ""
+      }
+    },
+    "PlutoConjuration": {
+      "Name": {
+        "Origin": "Pluto Conjuration",
+        "Translation": ""
+      }
+    },
+    "PlutoConjuration3": {
+      "Name": {
+        "Origin": "Pluto Conjuration3",
+        "Translation": ""
+      }
+    },
+    "SaturnConjuration1": {
+      "Name": {
+        "Origin": "Saturn Conjuration1",
+        "Translation": ""
+      }
+    },
+    "SaturnConjuration2": {
+      "Name": {
+        "Origin": "Saturn Conjuration2",
+        "Translation": ""
+      }
+    },
+    "VulcanConjuration": {
+      "Name": {
+        "Origin": "Vulcan Conjuration",
+        "Translation": ""
+      }
+    },
+    "VulcanConjuration2": {
+      "Name": {
+        "Origin": "Vulcan Conjuration",
+        "Translation": ""
+      }
+    },
+    "VulcanConjuration3": {
+      "Name": {
+        "Origin": "Vulcan Conjuration3",
+        "Translation": ""
+      }
+    },
+    "YuleConjuration": {
+      "Name": {
+        "Origin": "Yule Conjuration",
+        "Translation": ""
+      }
+    },
+    "AnDioDestruction1": {
+      "Name": {
+        "Origin": "Loki Spiral",
+        "Translation": ""
+      }
+    },
+    "AnDioDestruction2": {
+      "Name": {
+        "Origin": "Loki Spiral",
+        "Translation": ""
+      }
+    },
+    "ChlorysDestruction": {
+      "Name": {
+        "Origin": "Chlorys Destruction",
+        "Translation": ""
+      }
+    },
+    "CupidDestruction": {
+      "Name": {
+        "Origin": "Cupid Destruction",
+        "Translation": ""
+      }
+    },
+    "DestructionProjectile": {
+      "Name": {
+        "Origin": "Destruction Projectile",
+        "Translation": ""
+      }
+    },
+    "DionysusDestruction": {
+      "Name": {
+        "Origin": "Dionysus Destruction",
+        "Translation": ""
+      }
+    },
+    "DionysusExplosion": {
+      "Name": {
+        "Origin": "Dionysus Explosion",
+        "Translation": ""
+      }
+    },
+    "FreyaDestruction": {
+      "Name": {
+        "Origin": "Freya Destruction",
+        "Translation": ""
+      }
+    },
+    "FriggDestruction": {
+      "Name": {
+        "Origin": "Frigg Destruction",
+        "Translation": ""
+      }
+    },
+    "GaiaDestruction": {
+      "Name": {
+        "Origin": "Gaia Destruction",
+        "Translation": ""
+      }
+    },
+    "HadesExplosion": {
+      "Name": {
+        "Origin": "Hades Explosion",
+        "Translation": ""
+      }
+    },
+    "HallowsEveDestruction1": {
+      "Name": {
+        "Origin": "Hallows Eve Destruction1",
+        "Translation": ""
+      }
+    },
+    "HallowsEveDestruction2": {
+      "Name": {
+        "Origin": "Hallows Eve Destruction2",
+        "Translation": ""
+      }
+    },
+    "HermesDestruction": {
+      "Name": {
+        "Origin": "Hermes Destruction",
+        "Translation": ""
+      }
+    },
+    "MarsDestruction": {
+      "Name": {
+        "Origin": "Mars Destruction",
+        "Translation": ""
+      }
+    },
+    "OrionDestruction": {
+      "Name": {
+        "Origin": "Orion Destruction",
+        "Translation": ""
+      }
+    },
+    "PlutoDestruction": {
+      "Name": {
+        "Origin": "Pluto Destruction",
+        "Translation": ""
+      }
+    },
+    "SaturnDestruction": {
+      "Name": {
+        "Origin": "Saturn Destruction",
+        "Translation": ""
+      }
+    },
+    "ShroomBoom": {
+      "Name": {
+        "Origin": "Shroom Boom",
+        "Translation": ""
+      }
+    },
+    "YuleDestruction": {
+      "Name": {
+        "Origin": "Yule Destruction",
+        "Translation": ""
+      }
+    },
+    "ZuesBoltDestruction1": {
+      "Name": {
+        "Origin": "Zues Bolt Destruction1",
+        "Translation": ""
+      }
+    },
+    "ZuesBoltDestruction2": {
+      "Name": {
+        "Origin": "Zues Bolt Destruction2",
+        "Translation": ""
+      }
+    },
+    "ZuesBoltDestruction3": {
+      "Name": {
+        "Origin": "Zues Bolt Destruction3",
+        "Translation": ""
+      }
+    },
+    "AnDioIllusion": {
+      "Name": {
+        "Origin": "Ande Laser",
+        "Translation": ""
+      }
+    },
+    "ChlorysIllusion": {
+      "Name": {
+        "Origin": "Chlorys Illusion",
+        "Translation": ""
+      }
+    },
+    "CupidArrow": {
+      "Name": {
+        "Origin": "Heartburn Arrow",
+        "Translation": ""
+      }
+    },
+    "CupidIllusion": {
+      "Name": {
+        "Origin": "Heartburn Arrow",
+        "Translation": ""
+      }
+    },
+    "DionysusIllusion": {
+      "Name": {
+        "Origin": "Dionysus Illusion",
+        "Translation": ""
+      }
+    },
+    "FreyaIllusion": {
+      "Name": {
+        "Origin": "Freya Illusion",
+        "Translation": ""
+      }
+    },
+    "FriggIllusion": {
+      "Name": {
+        "Origin": "Frigg Illusion",
+        "Translation": ""
+      }
+    },
+    "GaiaIllusion": {
+      "Name": {
+        "Origin": "Gaia Illusion",
+        "Translation": ""
+      }
+    },
+    "HadesIllusion": {
+      "Name": {
+        "Origin": "Hades Illusion",
+        "Translation": ""
+      }
+    },
+    "HallowsEveIllusion1": {
+      "Name": {
+        "Origin": "Hallow's Eve Illusion",
+        "Translation": ""
+      }
+    },
+    "HallowsEveIllusion2": {
+      "Name": {
+        "Origin": "Hallows Eve Illusion2",
+        "Translation": ""
+      }
+    },
+    "HermesIllusion": {
+      "Name": {
+        "Origin": "Hermes Illusion",
+        "Translation": ""
+      }
+    },
+    "IllusionProjectile": {
+      "Name": {
+        "Origin": "Illusion Projectile",
+        "Translation": ""
+      }
+    },
+    "MarsIllusion": {
+      "Name": {
+        "Origin": "Mars' Illusion",
+        "Translation": ""
+      }
+    },
+    "OrionIllusion": {
+      "Name": {
+        "Origin": "Orion Illusion",
+        "Translation": ""
+      }
+    },
+    "OrionIllusionSpawn": {
+      "Name": {
+        "Origin": "Orion Illusion Spawn",
+        "Translation": ""
+      }
+    },
+    "PlutoIllusion": {
+      "Name": {
+        "Origin": "Pluto Illusion",
+        "Translation": ""
+      }
+    },
+    "SaturnIllusion1": {
+      "Name": {
+        "Origin": "Saturn Illusion1",
+        "Translation": ""
+      }
+    },
+    "SaturnIllusion2": {
+      "Name": {
+        "Origin": "Saturn Illusion2",
+        "Translation": ""
+      }
+    },
+    "VulcanIllusion": {
+      "Name": {
+        "Origin": "Vulcan Illusion",
+        "Translation": ""
+      }
+    },
+    "YuleIllusion": {
+      "Name": {
+        "Origin": "Yule Illusion",
+        "Translation": ""
+      }
+    },
+    "ZuesBoltIllusion1": {
+      "Name": {
+        "Origin": "Zues Bolt Illusion1",
+        "Translation": ""
+      }
+    },
+    "ZuesBoltIllusion2": {
+      "Name": {
+        "Origin": "Zues Bolt Illusion2",
+        "Translation": ""
+      }
+    },
+    "MysticProjectile": {
+      "Name": {
+        "Origin": "Mystic Projectile",
+        "Translation": ""
+      }
+    },
+    "CoginatorConductor": {
+      "Name": {
+        "Origin": "Coginator Conductor",
+        "Translation": ""
+      }
+    },
+    "ConductorProjectile": {
+      "Name": {
+        "Origin": "Conductor Projectile",
+        "Translation": ""
+      }
+    },
+    "EruptionEvil": {
+      "Name": {
+        "Origin": "Eruption Evil",
+        "Translation": ""
+      }
+    },
+    "MagmaBallLaunched": {
+      "Name": {
+        "Origin": "Magma Ball",
+        "Translation": ""
+      }
+    },
+    "ObsidiumHeartProjectile": {
+      "Name": {
+        "Origin": "Obsidium Heart",
+        "Translation": ""
+      }
+    },
+    "ToyTrainProjectile": {
+      "Name": {
+        "Origin": "Toy Train",
+        "Translation": ""
+      }
+    },
+    "Bubble": {
+      "Name": {
+        "Origin": "Bubble",
+        "Translation": ""
+      }
+    },
+    "DawnSpark": {
+      "Name": {
+        "Origin": "Dawn Spark",
+        "Translation": ""
+      }
+    },
+    "GoldenBubble": {
+      "Name": {
+        "Origin": "Golden Bubble",
+        "Translation": ""
+      }
+    },
+    "JunglePlagueSpore": {
+      "Name": {
+        "Origin": "Jungle Plague Spore",
+        "Translation": ""
+      }
+    },
+    "JunglePlagueSporeSpread": {
+      "Name": {
+        "Origin": "Jungle Plague Spore",
+        "Translation": ""
+      }
+    },
+    "TrueDawnSpark": {
+      "Name": {
+        "Origin": "True Dawn Spark",
+        "Translation": ""
+      }
+    },
+    "AvalancheProjectile": {
+      "Name": {
+        "Origin": "Avalanche Projectile",
+        "Translation": ""
+      }
+    },
+    "BrassArrowProjectile": {
+      "Name": {
+        "Origin": "Brass Arrow",
+        "Translation": ""
+      }
+    },
+    "FrostballProjectile": {
+      "Name": {
+        "Origin": "Frostball Projectile",
+        "Translation": ""
+      }
+    },
+    "IceBallProjectile": {
+      "Name": {
+        "Origin": "Ice Ball Projectile",
+        "Translation": ""
+      }
+    },
+    "Luminarrow": {
+      "Name": {
+        "Origin": "Luminarrow",
+        "Translation": ""
+      }
+    },
+    "LuminarrowHead": {
+      "Name": {
+        "Origin": "Luminarrow Head",
+        "Translation": ""
+      }
+    },
+    "ObsidiumArrow": {
+      "Name": {
+        "Origin": "Obsidium Arrow",
+        "Translation": ""
+      }
+    },
+    "ObsidiumArrowHead": {
+      "Name": {
+        "Origin": "Magma Shard",
+        "Translation": ""
+      }
+    },
+    "PinkIceBallProjectile": {
+      "Name": {
+        "Origin": "Pink Ice Ball Projectile",
+        "Translation": ""
+      }
+    },
+    "PurpleIceBallProjectile": {
+      "Name": {
+        "Origin": "Purple Ice Ball Projectile",
+        "Translation": ""
+      }
+    },
+    "RedIceBallProjectile": {
+      "Name": {
+        "Origin": "Red Ice Ball Projectile",
+        "Translation": ""
+      }
+    },
+    "SootballProjectile": {
+      "Name": {
+        "Origin": "Sootball Projectile",
+        "Translation": ""
+      }
+    },
+    "StarStrikerBeam": {
+      "Name": {
+        "Origin": "Star Striker Beam",
+        "Translation": ""
+      }
+    },
+    "YellowIceBall": {
+      "Name": {
+        "Origin": "Yellow Ice Ball",
+        "Translation": ""
+      }
+    },
+    "CapacityThornsProj": {
+      "Name": {
+        "Origin": "Capacity Thorns Proj",
+        "Translation": ""
+      }
+    },
+    "ElectroAura": {
+      "Name": {
+        "Origin": "Electroaura",
+        "Translation": ""
+      }
+    },
+    "FriendlyDungeonGuardian": {
+      "Name": {
+        "Origin": "Friendly Dungeon Guardian",
+        "Translation": ""
+      }
+    },
+    "FriendlyDungeonGuardianPrime": {
+      "Name": {
+        "Origin": "Friendly Dungeon Guardian Prime",
+        "Translation": ""
+      }
+    },
+    "FriendlyEyeLaserProj": {
+      "Name": {
+        "Origin": "Friendly Eye Laser Proj",
+        "Translation": ""
+      }
+    },
+    "FriendlyGolemProj": {
+      "Name": {
+        "Origin": "Friendly Golem Proj",
+        "Translation": ""
+      }
+    },
+    "FriendlyProbeLaserProj": {
+      "Name": {
+        "Origin": "Friendly Probe Laser Proj",
+        "Translation": ""
+      }
+    },
+    "FriendlyProbeProj": {
+      "Name": {
+        "Origin": "Friendly Probe Proj",
+        "Translation": ""
+      }
+    },
+    "FriendlyTrueEyeProj": {
+      "Name": {
+        "Origin": "Friendly True Eye Proj",
+        "Translation": ""
+      }
+    },
+    "MiniEye": {
+      "Name": {
+        "Origin": "Mini Eye",
+        "Translation": ""
+      }
+    },
+    "ShadowDoubleProj": {
+      "Name": {
+        "Origin": "Shadow Double Proj",
+        "Translation": ""
+      }
+    },
+    "BysmalBlast": {
+      "Name": {
+        "Origin": "Bysmal Blast",
+        "Translation": ""
+      }
+    },
+    "Nothing": {
+      "Name": {
+        "Origin": "Nothing",
+        "Translation": ""
+      }
+    },
+    "AndeshiardOrb": {
+      "Name": {
+        "Origin": "Andeshiard Orb",
+        "Translation": ""
+      }
+    },
+    "AndesiaProbe": {
+      "Name": {
+        "Origin": "Andesia Probe",
+        "Translation": ""
+      }
+    },
+    "ArcticHydraHead": {
+      "Name": {
+        "Origin": "Arctic Hydra Head",
+        "Translation": ""
+      }
+    },
+    "BysmalBlast2": {
+      "Name": {
+        "Origin": "Bysmal Blast2",
+        "Translation": ""
+      }
+    },
+    "DaggorShard": {
+      "Name": {
+        "Origin": "Daggor Shard",
+        "Translation": ""
+      }
+    },
+    "DioritusProbe": {
+      "Name": {
+        "Origin": "Dioritus Probe",
+        "Translation": ""
+      }
+    },
+    "MagmaticCoreProjectile": {
+      "Name": {
+        "Origin": "Magmatic Core Projectile",
+        "Translation": ""
+      }
+    },
+    "SandySharkProjectile": {
+      "Name": {
+        "Origin": "Sandy Shark Projectile",
+        "Translation": ""
+      }
+    },
+    "ShroolicopterProjectile": {
+      "Name": {
+        "Origin": "Shroolicopter Projectile",
+        "Translation": ""
+      }
+    },
+    "ShroomProjectile": {
+      "Name": {
+        "Origin": "Shroom",
+        "Translation": ""
+      }
+    },
+    "SoulmasterOrb": {
+      "Name": {
+        "Origin": "Soulmaster Orb",
+        "Translation": ""
+      }
+    },
+    "TV": {
+      "Name": {
+        "Origin": "T V",
+        "Translation": ""
+      }
+    },
+    "UltimateLeader1": {
+      "Name": {
+        "Origin": "Ultimate Leader1",
+        "Translation": ""
+      }
+    },
+    "UltimateLeader2": {
+      "Name": {
+        "Origin": "Ultimate Leader2",
+        "Translation": ""
+      }
+    },
+    "UltimateLeader3": {
+      "Name": {
+        "Origin": "Ultimate Leader3",
+        "Translation": ""
+      }
+    },
+    "UltimateLeader4": {
+      "Name": {
+        "Origin": "Ultimate Leader4",
+        "Translation": ""
+      }
+    },
+    "UltimateLeader5": {
+      "Name": {
+        "Origin": "Ultimate Leader5",
+        "Translation": ""
+      }
+    },
+    "UltimateLeader6": {
+      "Name": {
+        "Origin": "Ultimate Leader6",
+        "Translation": ""
+      }
+    },
+    "AndeshiardThrownProjectile": {
+      "Name": {
+        "Origin": "Andeshiard Thrown Projectile",
+        "Translation": ""
+      }
+    },
+    "AnDiurikenThrownProjectile": {
+      "Name": {
+        "Origin": "An Diuriken Thrown Projectile",
+        "Translation": ""
+      }
+    },
+    "AntarcticaProjectile": {
+      "Name": {
+        "Origin": "Antarctica Projectile",
+        "Translation": ""
+      }
+    },
+    "BysmalRipperProjectile": {
+      "Name": {
+        "Origin": "Bysmal Ripper Projectile",
+        "Translation": ""
+      }
+    },
+    "BysmalRipperShadow": {
+      "Name": {
+        "Origin": "Bysmal Ripper Shadow",
+        "Translation": ""
+      }
+    },
+    "CoginatorP": {
+      "Name": {
+        "Origin": "Coginator P",
+        "Translation": ""
+      }
+    },
+    "DaggoritusProjectile": {
+      "Name": {
+        "Origin": "Daggoritus Projectile",
+        "Translation": ""
+      }
+    },
+    "EnginatorTProj": {
+      "Name": {
+        "Origin": "Enginator T Proj",
+        "Translation": ""
+      }
+    },
+    "EruptorProjectile": {
+      "Name": {
+        "Origin": "Eruptor Projectile",
+        "Translation": ""
+      }
+    },
+    "ForbiddenAxeProj": {
+      "Name": {
+        "Origin": "Forbidden Axe Proj",
+        "Translation": ""
+      }
+    },
+    "Hail": {
+      "Name": {
+        "Origin": "Hail",
+        "Translation": ""
+      }
+    },
+    "JetDaggerProjectile": {
+      "Name": {
+        "Origin": "Jet Dagger Projectile",
+        "Translation": ""
+      }
+    },
+    "ObshardianP": {
+      "Name": {
+        "Origin": "Obshardian P",
+        "Translation": ""
+      }
+    },
+    "ShardianP": {
+      "Name": {
+        "Origin": "Shardian P",
+        "Translation": ""
+      }
+    },
+    "TheSnowflakeProjectile": {
+      "Name": {
+        "Origin": "The Snowflake Projectile",
+        "Translation": ""
+      }
+    },
+    "ViciousAssassin2": {
+      "Name": {
+        "Origin": "Vicious Assassin",
+        "Translation": ""
+      }
+    },
+    "ViciousAssassinMain": {
+      "Name": {
+        "Origin": "Vicious Assassin",
+        "Translation": ""
+      }
+    },
+    "ViciousAssassinShard": {
+      "Name": {
+        "Origin": "Vicious Assassin Shard",
+        "Translation": ""
+      }
+    },
+    "BysmalDrillProjectile": {
+      "Name": {
+        "Origin": "Bysmal Drill Projectile",
+        "Translation": ""
+      }
+    },
+    "DrillinatorProjectile": {
+      "Name": {
+        "Origin": "Drillinator Projectile",
+        "Translation": ""
+      }
+    },
+    "DrillOTron10000Projectile": {
+      "Name": {
+        "Origin": "Drill O Tron10000 Projectile",
+        "Translation": ""
+      }
+    }
+  }
+}

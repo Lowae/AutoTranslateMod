@@ -1,0 +1,784 @@
+{
+  "Buffs": {
+    "Albus": {
+      "Name": {
+        "Origin": "Albus",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10% Damage Reduction",
+        "Translation": ""
+      }
+    },
+    "Annihilation": {
+      "Name": {
+        "Origin": "Annihilation",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You are infused with the rage of an Annihilator.",
+        "Translation": ""
+      }
+    },
+    "Aquos": {
+      "Name": {
+        "Origin": "Aquos",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10% Critical Strike Chance",
+        "Translation": ""
+      }
+    },
+    "ArcticHydraBuff": {
+      "Name": {
+        "Origin": "Arctic Hydra",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "The Hydra Hoard will fight for you",
+        "Translation": ""
+      }
+    },
+    "Aura": {
+      "Name": {
+        "Origin": "Aura",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10% Max Life",
+        "Translation": ""
+      }
+    },
+    "BloodRage": {
+      "Name": {
+        "Origin": "Blood Rage",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Increased Damage and Crit chance",
+        "Translation": ""
+      }
+    },
+    "Bubbly": {
+      "Name": {
+        "Origin": "Bubbly",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Bubbles!",
+        "Translation": ""
+      }
+    },
+    "BurningFragrance": {
+      "Name": {
+        "Origin": "Burning Fragrance",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Increased attack stats",
+        "Translation": ""
+      }
+    },
+    "CapacityCurseBuff": {
+      "Name": {
+        "Origin": "Capacity Curse",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You've been weakened!",
+        "Translation": ""
+      }
+    },
+    "CarapaceDamageBuff": {
+      "Name": {
+        "Origin": "Fractured Carapace",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Increased Damage!",
+        "Translation": ""
+      }
+    },
+    "ConjurationBoost": {
+      "Name": {
+        "Origin": "Conjuration Power",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Otherworldly energy strengthens you.'\n+50% Overflow",
+        "Translation": ""
+      }
+    },
+    "Connected": {
+      "Name": {
+        "Origin": "Connected",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You are connected to the grid!",
+        "Translation": ""
+      }
+    },
+    "DawnBuff": {
+      "Name": {
+        "Origin": "Dawn",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Golden energy",
+        "Translation": ""
+      }
+    },
+    "DestroyerSoulCooldownBuff": {
+      "Name": {
+        "Origin": "Destroyer Soul Cooldown",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your Destroyer effect is on Cooldown.",
+        "Translation": ""
+      }
+    },
+    "DestructionBoost": {
+      "Name": {
+        "Origin": "Destruction Power",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Hell's energy strengthens you.'\n+10% Mystic Damage",
+        "Translation": ""
+      }
+    },
+    "EtherBones": {
+      "Name": {
+        "Origin": "Ether Bones",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your bones are infused with the strength of the Etherial.",
+        "Translation": ""
+      }
+    },
+    "EtherialEffectCooldownBuff": {
+      "Name": {
+        "Origin": "Etherial Rage",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+20 Defense & +20% Damage",
+        "Translation": ""
+      }
+    },
+    "EtherialRagnar": {
+      "Name": {
+        "Origin": "Magmatic",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Increased stats from being in lava!",
+        "Translation": ""
+      }
+    },
+    "EtherialScarfCooldown": {
+      "Name": {
+        "Origin": "Fragmented Soul",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your Etherial Scarf has to regenerate before it can save you again.",
+        "Translation": ""
+      }
+    },
+    "EvilBossCooldownBuff": {
+      "Name": {
+        "Origin": "Evil Boss Soul Cooldown",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your World Evil Boss effect is on Cooldown.",
+        "Translation": ""
+      }
+    },
+    "ForGlory": {
+      "Name": {
+        "Origin": "For Glory",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+15% Damage \nNo life Regen",
+        "Translation": ""
+      }
+    },
+    "ForHonor": {
+      "Name": {
+        "Origin": "For Honor",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+15% Damage \nDefense Halved",
+        "Translation": ""
+      }
+    },
+    "FragmentedMind": {
+      "Name": {
+        "Origin": "Fragmented Mind",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your Etherial Brain has to regenerate before it can save you again.",
+        "Translation": ""
+      }
+    },
+    "Frigid": {
+      "Name": {
+        "Origin": "Frigid",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Freeze!'",
+        "Translation": ""
+      }
+    },
+    "Frostbite": {
+      "Name": {
+        "Origin": "Frostbite",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "The cold bites back!",
+        "Translation": ""
+      }
+    },
+    "Furious": {
+      "Name": {
+        "Origin": "Furious",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Losing life.\nExplode upon death",
+        "Translation": ""
+      }
+    },
+    "IllusionBoost": {
+      "Name": {
+        "Origin": "Illusion Power",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'The mind's energy strengthens you.'\n+100% Mystic Duration",
+        "Translation": ""
+      }
+    },
+    "Incineration": {
+      "Name": {
+        "Origin": "Incineration",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Smokin hot!",
+        "Translation": ""
+      }
+    },
+    "JumpBoost": {
+      "Name": {
+        "Origin": "Jump Boost",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Reach for the sky.'",
+        "Translation": ""
+      }
+    },
+    "JunglePlagueBuff": {
+      "Name": {
+        "Origin": "Jungle Plague",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Sporified!",
+        "Translation": ""
+      }
+    },
+    "JusticeCooldown": {
+      "Name": {
+        "Origin": "Blind Justice",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Justice has gone blind for a while.",
+        "Translation": ""
+      }
+    },
+    "LavaDamageBuff": {
+      "Name": {
+        "Origin": "Lava Damage",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+15% Damage",
+        "Translation": ""
+      }
+    },
+    "LavaDefenseBuff": {
+      "Name": {
+        "Origin": "Lava Defense",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10 Defense",
+        "Translation": ""
+      }
+    },
+    "LavaRegen": {
+      "Name": {
+        "Origin": "Lava Regen",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Greatly increased regeneration",
+        "Translation": ""
+      }
+    },
+    "Lovestruck": {
+      "Name": {
+        "Origin": "Lovestruck",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "",
+        "Translation": ""
+      }
+    },
+    "Magmatic": {
+      "Name": {
+        "Origin": "Magmatic",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Increased stats from being in lava!",
+        "Translation": ""
+      }
+    },
+    "MagmaticCoreBuff": {
+      "Name": {
+        "Origin": "Magmatic Core",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "This ball of hardened magma will fight for you",
+        "Translation": ""
+      }
+    },
+    "MagmaticVeins": {
+      "Name": {
+        "Origin": "Magmatic Veins",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Power flows through you!",
+        "Translation": ""
+      }
+    },
+    "Midnight": {
+      "Name": {
+        "Origin": "Midnight",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Midnight's Moon glows bright on you.'\nUnleash a Midnight Burst when changing Mysticism",
+        "Translation": ""
+      }
+    },
+    "MobilityCurseBuff": {
+      "Name": {
+        "Origin": "Mobility Curse",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Slow down there, punk.",
+        "Translation": ""
+      }
+    },
+    "MoonLordSoulCooldownBuff": {
+      "Name": {
+        "Origin": "Moon Lord Soul Cooldown",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your Moon Lord effect is on Cooldown.",
+        "Translation": ""
+      }
+    },
+    "Conjuration": {
+      "Name": {
+        "Origin": "Conjuration",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Draw energy from other worlds",
+        "Translation": ""
+      }
+    },
+    "Destruction": {
+      "Name": {
+        "Origin": "Destruction",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Hell is your catalyst",
+        "Translation": ""
+      }
+    },
+    "HermesBuff": {
+      "Name": {
+        "Origin": "Hermes",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Be smitten",
+        "Translation": ""
+      }
+    },
+    "Illusion": {
+      "Name": {
+        "Origin": "Illusion",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "The power of the mind is yours",
+        "Translation": ""
+      }
+    },
+    "Mystified": {
+      "Name": {
+        "Origin": "Mystified",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Disintegrating!",
+        "Translation": ""
+      }
+    },
+    "Mysticality": {
+      "Name": {
+        "Origin": "Mysticality",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You can't drink Potentia Potions for a while",
+        "Translation": ""
+      }
+    },
+    "Mysticality2": {
+      "Name": {
+        "Origin": "Unstable Mysticality",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You can't drink Potentia Potions for a while, but Overflow is increased by 10%",
+        "Translation": ""
+      }
+    },
+    "Mysticality3": {
+      "Name": {
+        "Origin": "Volatile Mysticality",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You can't drink Potentia Potions for a while.\n+20% Overflow",
+        "Translation": ""
+      }
+    },
+    "MysticBurstPotion": {
+      "Name": {
+        "Origin": "Burst Power",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Mystical energy swells within you.'\nDecreases Mystic Burst cooldown",
+        "Translation": ""
+      }
+    },
+    "MysticPower": {
+      "Name": {
+        "Origin": "Mystic Power",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'The energy of the cosmos strengthens you.'\n+10% Mystic Damage",
+        "Translation": ""
+      }
+    },
+    "ObsidiumHeartBuff": {
+      "Name": {
+        "Origin": "Obsidium Heart",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'A special kind of love.'",
+        "Translation": ""
+      }
+    },
+    "OmegaJumpBoost": {
+      "Name": {
+        "Origin": "Omega Jump Boost",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Reach for the next dimension.'",
+        "Translation": ""
+      }
+    },
+    "OrbitalBuff": {
+      "Name": {
+        "Origin": "Orbital",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Into orbit!",
+        "Translation": ""
+      }
+    },
+    "Regis": {
+      "Name": {
+        "Origin": "Regis",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10% Life Regen",
+        "Translation": ""
+      }
+    },
+    "RockTwins": {
+      "Name": {
+        "Origin": "Rock Twins",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "The rulers of the caverns will protect you!",
+        "Translation": ""
+      }
+    },
+    "Rubrum": {
+      "Name": {
+        "Origin": "Rubrum",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10% Damage",
+        "Translation": ""
+      }
+    },
+    "SandySharkBuff": {
+      "Name": {
+        "Origin": "Sandy Shark",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "It looks a bit pouty",
+        "Translation": ""
+      }
+    },
+    "ShroolicopterBuff": {
+      "Name": {
+        "Origin": "Shroolicopter",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Rain Shrooms upon them.'",
+        "Translation": ""
+      }
+    },
+    "Slimed": {
+      "Name": {
+        "Origin": "Slimed",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Slowly losing life",
+        "Translation": ""
+      }
+    },
+    "SpookedBuff": {
+      "Name": {
+        "Origin": "Spooked",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Many spoops!",
+        "Translation": ""
+      }
+    },
+    "Spored": {
+      "Name": {
+        "Origin": "Spored",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Smokin hot!",
+        "Translation": ""
+      }
+    },
+    "Steamified": {
+      "Name": {
+        "Origin": "Steamified",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Steamin hot!",
+        "Translation": ""
+      }
+    },
+    "SteamTrainSoulCooldownBuff": {
+      "Name": {
+        "Origin": "Steam Train Soul Cooldown",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your Steam Train effect is on Cooldown.",
+        "Translation": ""
+      }
+    },
+    "Steamy": {
+      "Name": {
+        "Origin": "Steamy",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Smokin hot!",
+        "Translation": ""
+      }
+    },
+    "TenacityCurseBuff": {
+      "Name": {
+        "Origin": "Tenacity Curse",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You've been weakened!",
+        "Translation": ""
+      }
+    },
+    "TimeExhausted": {
+      "Name": {
+        "Origin": "Out of Time",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You cannot use Time Stop for a while",
+        "Translation": ""
+      }
+    },
+    "ToyTrainBuff": {
+      "Name": {
+        "Origin": "Toy Train",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Choo Choo!",
+        "Translation": ""
+      }
+    },
+    "TrueCurse": {
+      "Name": {
+        "Origin": "True Curse",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You truly can do nothing",
+        "Translation": ""
+      }
+    },
+    "TrueDawn": {
+      "Name": {
+        "Origin": "TrueDawn",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Star energy",
+        "Translation": ""
+      }
+    },
+    "TVBuff": {
+      "Name": {
+        "Origin": "TV",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Don't watch- it's just fake news.",
+        "Translation": ""
+      }
+    },
+    "UltimateLeaderBuff": {
+      "Name": {
+        "Origin": "Ultimate Leader",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "This nebula swarm will fight for you",
+        "Translation": ""
+      }
+    },
+    "UltraJumpBoostBuff": {
+      "Name": {
+        "Origin": "Ultra Jump Boost",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "'Reach for the stars.'",
+        "Translation": ""
+      }
+    },
+    "Verdi": {
+      "Name": {
+        "Origin": "Verdi",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "+10% Max Run Speed",
+        "Translation": ""
+      }
+    },
+    "WallOfFleshEffectCooldownBuff": {
+      "Name": {
+        "Origin": "Wall of Flesh Effect Cooldown",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Your Wall of Flesh effect is on Cooldown.",
+        "Translation": ""
+      }
+    },
+    "WingClip": {
+      "Name": {
+        "Origin": "Wing Clip",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Flight time drastically reduced.",
+        "Translation": ""
+      }
+    },
+    "SteamTrainMountBuff": {
+      "Name": {
+        "Origin": "Train",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "Choo Choo!",
+        "Translation": ""
+      }
+    },
+    "SoulStoneAbilityCooldownBuff": {
+      "Name": {
+        "Origin": "Soul Stone Ability Cooldown",
+        "Translation": ""
+      },
+      "Description": {
+        "Origin": "You used your Soul Stone's ability recently!",
+        "Translation": ""
+      }
+    }
+  }
+}

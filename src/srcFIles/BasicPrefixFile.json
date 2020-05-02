@@ -1,0 +1,52 @@
+{
+  "Prefixes": {
+    "CarefulPrefix": {
+      "Name": {
+        "Origin": "Careful",
+        "Translation": ""
+      }
+    },
+    "ColossalPrefix": {
+      "Name": {
+        "Origin": "Colossal",
+        "Translation": ""
+      }
+    },
+    "HallowedPrefix": {
+      "Name": {
+        "Origin": "Hallowed",
+        "Translation": ""
+      }
+    },
+    "KnowledgeablePrefix": {
+      "Name": {
+        "Origin": "Knowledgeable",
+        "Translation": ""
+      }
+    },
+    "Swift": {
+      "Name": {
+        "Origin": "Swift",
+        "Translation": ""
+      }
+    },
+    "Speedy": {
+      "Name": {
+        "Origin": "Speedy",
+        "Translation": ""
+      }
+    },
+    "Zippy": {
+      "Name": {
+        "Origin": "Zippy",
+        "Translation": ""
+      }
+    },
+    "Yeeting": {
+      "Name": {
+        "Origin": "Yeeting",
+        "Translation": ""
+      }
+    }
+  }
+}
