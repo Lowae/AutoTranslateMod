@@ -1,4 +1,5 @@
-import io.reactivex.rxjava3.core.Observable
+package main
+
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.File
@@ -11,24 +12,41 @@ import java.util.regex.Pattern
 import kotlin.random.Random
 
 const val BAIDU_API = "http://api.fanyi.baidu.com/api/trans/vip/translate"
-const val APPID = "百度APPID"
-const val KEY = "百度KEy"
 const val USER_AGENT =
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
-const val SRC_DIR = "src/srcFiles"
-const val TARGET_DIR = "src/targetFiles"
+const val SRC_DIR = "/srcFiles"
+const val TARGET_DIR = "/targetFiles"
 
-fun main() {
+fun main(args: Array<String>) {
     val apiType = Translate.ApiType.BAIDU
-    Translate(apiType).apply {
-        File(SRC_DIR).list()?.forEach {
+    val dir = Main()::class.java.protectionDomain.codeSource.location.path.run {
+        substring(1, this.lastIndexOf('/'))
+    }
+    val srcDir = "$dir$SRC_DIR"
+    val targetDir = "$dir$TARGET_DIR"
+    println("输入APPID:")
+    val appid = readLine()
+    println("输入密钥:")
+    val key = readLine()
+    println("输入文件夹：$srcDir")
+    println("输出文件夹：$targetDir")
+    Translate(apiType, srcDir, targetDir, appid.toString(), key.toString()).apply {
+        File(srcDir).list()?.forEach {
             println("$it ${"-".repeat(30)}")
-            switchParse(SRC_DIR, it)
+            switchParse(it)
         }
     }
 }
 
-class Translate(private val apiType: ApiType) {
+class Main
+
+class Translate(
+    private val apiType: ApiType,
+    private val srcDir: String,
+    private val targetDir: String,
+    private val APPID: String = "",
+    private val KEY: String =""
+) {
     enum class ApiType {
         BAIDU
     }
@@ -37,15 +55,6 @@ class Translate(private val apiType: ApiType) {
      * 匹配中文，如果有翻译则跳过
      */
     private val p: Pattern = Pattern.compile("[\u4e00-\u9fa5]")
-
-    data class MapData(
-        val nameJson: JSONObject,
-        val nameBefore: String,
-        val nameOrigin: String,
-        val nextJson: JSONObject? = null,
-        val nextBefore: String,
-        val nextOrigin: String = ""
-    )
 
     private fun getJson(path: String): StringBuilder {
         try {
@@ -140,22 +149,22 @@ class Translate(private val apiType: ApiType) {
         }
     }
 
-    fun switchParse(dir: String, fileName: String) {
+    fun switchParse(fileName: String) {
         when (fileName) {
             "BasicBuffFile.json" -> {
-                parseJson("$dir/BasicBuffFile.json", false, "Description")
+                parseJson("$srcDir/BasicBuffFile.json", false, "Description")
             }
             "BasicItemFile.json" -> {
-                parseJson("$dir/BasicItemFile.json", false, "Tooltip")
+                parseJson("$srcDir/BasicItemFile.json", false, "Tooltip")
             }
             "BasicNPCFile.json" -> {
-                parseJson("$dir/BasicNPCFile.json", true, "")
+                parseJson("$srcDir/BasicNPCFile.json", true, "")
             }
             "BasicPrefixFile.json" -> {
-                parseJson("$dir/BasicPrefixFile.json", true, "")
+                parseJson("$srcDir/BasicPrefixFile.json", true, "")
             }
             "BasicProjectileFile.json" -> {
-                parseJson("$dir/BasicProjectileFile.json", true, "")
+                parseJson("$srcDir/BasicProjectileFile.json", true, "")
             }
             "LdstrFile.json" -> {
 
@@ -170,76 +179,62 @@ class Translate(private val apiType: ApiType) {
         val k = jo.keys()
         while (k.hasNext()) {//NPC
             val jo1 = jo.getJSONObject(k.next())
-            Observable.fromArray(jo1.keys())
-                .map { map ->
-                    val result = ArrayList<MapData>()
-                    map.forEach {
-                        val item = jo1.getJSONObject(it)
-                        val nameJson = item.getJSONObject("Name")
-                        val nextJson = if (isSkipNext) null else item.getJSONObject(nextName)
-                        val first = nameJson.optString("Origin")
-                        val second = nextJson?.optString("Origin") ?: ""
-                        val originResult =
-                            if (p.matcher(first).find()) "" else getResponse(getHttpUrl(first))
-                        val nextResult =
-                            if (p.matcher(second).find() || isSkipNext) "" else getResponse(
-                                getHttpUrl(second)
-                            )
-                        result.add(
-                            MapData(
-                                nameJson,
-                                first,
-                                originResult,
-                                nextJson,
-                                second,
-                                nextResult
-                            )
-                        )
-                        if (apiType == ApiType.BAIDU) {
-                            //百度Api限制1秒10次，这里单纯简单粗暴sleep 100ms
-                            Thread.sleep(100)
+            jo1.keys().forEach {
+                val item = jo1.getJSONObject(it)
+                val nameJson = item.getJSONObject("Name")
+                val nextJson = if (isSkipNext) null else item.getJSONObject(nextName)
+                val first = nameJson.optString("Origin")
+                val second = nextJson?.optString("Origin") ?: ""
+                val startTime = System.currentTimeMillis()
+                val originResult =
+                    if (p.matcher(first).find()) "" else getResponse(getHttpUrl(first))
+                val endTime = System.currentTimeMillis() - startTime
+                Thread.sleep(
+                    if (endTime > 100) 0 else 100 - endTime
+                )
+                val nextResult =
+                    if (p.matcher(second).find() || isSkipNext) "" else getResponse(
+                        getHttpUrl(second)
+                    )
+                if (originResult.isNotBlank()) {
+                    val sb = StringBuilder()
+                    val arr = JSONArray(JSONObject(originResult).optString("trans_result"))
+                    for (item in 0 until arr.length()) {
+                        sb.append(JSONObject(arr.get(item).toString()).optString("dst"))
+                        if (item != arr.length() - 1) {
+                            sb.append("\n")
                         }
                     }
-                    result
+                    nameJson.put(
+                        "Translation",
+                        sb.append("\n" + first)
+                    )
                 }
-                .subscribe({ result ->
-                    result.forEach {
-                        if (it.nameOrigin.isNotBlank()) {
-                            val sb = StringBuilder()
-                            val arr = JSONArray(JSONObject(it.nameOrigin).optString("trans_result"))
-                            for (item in 0 until arr.length()) {
-                                sb.append(JSONObject(arr.get(item).toString()).optString("dst"))
-                                if (item != arr.length() - 1) {
-                                    sb.append("\n")
-                                }
-                            }
-                            it.nameJson.put(
-                                "Translation",
-                                sb.append("\n" + it.nameBefore)
-                            )
+                if (nextResult.isNotBlank()) {
+                    val sb = StringBuilder()
+                    val arr = JSONArray(JSONObject(nextResult).optString("trans_result"))
+                    for (item in 0 until arr.length()) {
+                        sb.append(JSONObject(arr.get(item).toString()).optString("dst"))
+                        if (item != arr.length() - 1) {
+                            sb.append("\n")
                         }
-                        if (it.nextOrigin.isNotBlank()) {
-                            val sb = StringBuilder()
-                            val arr = JSONArray(JSONObject(it.nextOrigin).optString("trans_result"))
-                            for (item in 0 until arr.length()) {
-                                sb.append(JSONObject(arr.get(item).toString()).optString("dst"))
-                                if (item != arr.length() - 1) {
-                                    sb.append("\n")
-                                }
-                            }
-                            it.nextJson?.put(
-                                "Translation",
-                                sb.append("\n" + it.nextBefore)
-                            )
+                    }
+                    nextJson?.put(
+                        "Translation",
+                        sb.append("\n" + second)
+                    )
 
-                        }
-                    }
-                    val joS = jo.toString()
-                    File(TARGET_DIR, path.split("/").last()).printWriter().use {
-                        it.println(joS)
-                    }
-                    println("Json --- Completed !\n $joS")
-                }, { println(it) })
+                }
+                if (apiType == ApiType.BAIDU) {
+                    //百度Api限制1秒10次，这里单纯简单粗暴sleep 100ms
+                    Thread.sleep(100)
+                }
+            }
+            val joS = jo.toString()
+            File(targetDir, path.split("/").last()).printWriter().use {
+                it.println(joS)
+            }
+            println("Json --- Completed !\n $joS")
         }
 
     }
