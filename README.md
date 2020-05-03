@@ -9,7 +9,7 @@
 </div>
 随后run ,会自动翻译到targetFiles目录下，目前LdstrFile.json未翻译，但是不是很影响体验，最近在忙毕设，等有空吧。
 
-方法2 ------ (需至少安装JRE)将根目录AutoTranslateMod-1.0-SNAPSHOT.jar文件移到任意地方，并在当前文件夹创建srcFiles和targetFiles,任何打开命令行到当前目录执行java -jar AutoTranslateMod-1.0-SNAPSHOT.jar即可
+方法2 ------ (需至少安装JRE)将根目录AutoTranslateMod-1.0-SNAPSHOT.jar文件移到任意地方(不移都行)，并在jar的当前文件夹创建srcFiles和targetFiles,任何打开命令行到当前目录执行java -jar AutoTranslateMod-1.0-SNAPSHOT.jar即可
 ========================================================
 <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/2.PNG" >
