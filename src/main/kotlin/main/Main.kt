@@ -176,7 +176,7 @@ class Translate(private val apiType: ApiType, private val srcDir: String, privat
                     if (p.matcher(first).find()) "" else getResponse(getHttpUrl(first))
                 val endTime = System.currentTimeMillis() - startTime
                 Thread.sleep(
-                    if (endTime > 100) 0 else 100 - endTime
+                    if (endTime > 100) 0 else 100 - endTime//百度Api限制1秒10次
                 )
                 val nextResult =
                     if (p.matcher(second).find() || isSkipNext) "" else getResponse(
@@ -210,10 +210,6 @@ class Translate(private val apiType: ApiType, private val srcDir: String, privat
                         sb.append("\n" + second)
                     )
 
-                }
-                if (apiType == ApiType.BAIDU) {
-                    //百度Api限制1秒10次，这里单纯简单粗暴sleep 100ms
-                    Thread.sleep(100)
                 }
             }
             val joS = jo.toString()
