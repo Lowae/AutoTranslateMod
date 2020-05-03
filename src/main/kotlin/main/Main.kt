@@ -16,14 +16,22 @@ const val USER_AGENT =
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
 const val SRC_DIR = "/srcFiles"
 const val TARGET_DIR = "/targetFiles"
-const val APPID = "百度APPID"
-const val KEY = "百度密钥"
 
 fun main(args: Array<String>) {
     val apiType = Translate.ApiType.BAIDU
-    val srcDir = "src$SRC_DIR"
-    val targetDir = "src$TARGET_DIR"
-    Translate(apiType, srcDir, targetDir).apply {
+    val dir = Main()::class.java.protectionDomain.codeSource.location.path.run {
+        substring(1, lastIndexOf('/'))
+    }
+    val srcDir = "$dir$SRC_DIR"
+    val targetDir = "$dir$TARGET_DIR"
+    println("ApiType: ${apiType.name}\n源文件夹：${srcDir}, 目标文件夹：${targetDir}")
+
+    println("输入APPID:")
+    val appid = readLine().toString()
+    println("输入密钥：")
+    val key = readLine().toString()
+
+    Translate(apiType, srcDir, targetDir, appid, key).apply {
         println(srcDir)
         File(srcDir).list()?.forEach {
             println("$it ${"-".repeat(30)}")
@@ -32,7 +40,15 @@ fun main(args: Array<String>) {
     }
 }
 
-class Translate(private val apiType: ApiType, private val srcDir: String, private val targetDir: String) {
+class Main
+
+class Translate(
+    private val apiType: ApiType,
+    private val srcDir: String,
+    private val targetDir: String,
+    private val APPID: String,
+    private val KEY: String
+) {
     enum class ApiType {
         BAIDU
     }
