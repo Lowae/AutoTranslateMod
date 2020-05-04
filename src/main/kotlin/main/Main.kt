@@ -43,11 +43,7 @@ class Translate(private val apiType: ApiType, private val srcDir: String, privat
     private val p: Pattern = Pattern.compile("[\u4e00-\u9fa5]")
 
     private val LdstrFilsMaths = arrayListOf<String>(
-        "TownNPCName",
-        "Chat",
-        "ModifyTooltips",
-        "UpdateArmorSet",
-        ".ctor"
+        "Chat"
     )
 
     private fun getJson(path: String): StringBuilder {
