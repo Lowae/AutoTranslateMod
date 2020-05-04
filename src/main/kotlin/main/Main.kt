@@ -58,6 +58,14 @@ class Translate(
      */
     private val p: Pattern = Pattern.compile("[\u4e00-\u9fa5]")
 
+    private val LdstrFilsMaths = arrayListOf<String>(
+        "TownNPCName",
+        "Chat",
+        "ModifyTooltips",
+        "UpdateArmorSet",
+        ".ctor"
+    )
+
     private fun getJson(path: String): StringBuilder {
         try {
             val sb = StringBuilder()
@@ -169,9 +177,56 @@ class Translate(
                 parseJson("$srcDir/BasicProjectileFile.json", true, "")
             }
             "LdstrFile.json" -> {
-
+                parseLdstrFile("$srcDir/LdstrFile.json")
             }
             else -> return
+        }
+    }
+
+    private fun parseLdstrFile(path: String) {
+        val s = getJson(path).toString()
+        val jo = JSONObject(s)
+        val k = jo.keys()
+        while (k.hasNext()) {
+            val jo1 = jo.getJSONObject(k.next())
+            jo1.keys().forEach {
+                val index = it.lastIndexOf("::")
+                val matchStr = it.substring(index + 2, it.length).split('(')[0]
+                println(matchStr)
+                if (LdstrFilsMaths.contains(matchStr) || matchStr.contains("Chat")) {
+                    val item = jo1.getJSONObject(it)
+                    val instructions = item.getJSONArray("Instructions")
+                    for (i in 0 until instructions.length()) {
+                        val jsonObj = instructions.getJSONObject(i)
+                        val origin = jsonObj.getString("Origin")
+                        val trans = jsonObj.getString("Translation")
+                        if (origin.contains('/'))return@forEach
+                        val startTime = System.currentTimeMillis()
+                        val result = if (p.matcher(trans).find()) return@forEach else getResponse(getHttpUrl(origin))
+                        val sb = StringBuilder()
+                        val arr = JSONArray(JSONObject(result).optString("trans_result"))
+                        for (item in 0 until arr.length()) {
+                            sb.append(JSONObject(arr.get(item).toString()).optString("dst"))
+                            if (item != arr.length() - 1) {
+                                sb.append("\n")
+                            }
+                        }
+                        jsonObj.put(
+                            "Translation",
+                            sb.append("\n" + origin)
+                        )
+                        val gapTime = System.currentTimeMillis() - startTime
+                        Thread.sleep(
+                            if (gapTime > 100) 0 else gapTime
+                        )
+                    }
+                }
+            }
+            val joS = jo.toString()
+            File(targetDir, path.split("/").last()).printWriter().use {
+                it.println(joS)
+            }
+            println("Json --- Completed !\n $joS")
         }
     }
 
@@ -186,16 +241,18 @@ class Translate(
                 val nameJson = item.getJSONObject("Name")
                 val nextJson = if (isSkipNext) null else item.getJSONObject(nextName)
                 val first = nameJson.optString("Origin")
+                val firstTrans = nameJson.optString("Translation")
                 val second = nextJson?.optString("Origin") ?: ""
+                val secondTrans = nameJson.optString("Translation")
                 val startTime = System.currentTimeMillis()
                 val originResult =
-                    if (p.matcher(first).find()) "" else getResponse(getHttpUrl(first))
+                    if (p.matcher(firstTrans).find()) "" else getResponse(getHttpUrl(first))
                 val endTime = System.currentTimeMillis() - startTime
                 Thread.sleep(
                     if (endTime > 100) 0 else 100 - endTime//百度Api限制1秒10次
                 )
                 val nextResult =
-                    if (p.matcher(second).find() || isSkipNext) "" else getResponse(
+                    if (p.matcher(secondTrans).find() || isSkipNext) "" else getResponse(
                         getHttpUrl(second)
                     )
                 if (originResult.isNotBlank()) {
