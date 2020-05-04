@@ -27,9 +27,7 @@ fun main(args: Array<String>) {
         println(srcDir)
         File(srcDir).list()?.forEach {
             println("$it ${"-".repeat(30)}")
-            if (it == "LdstrFile.json") {
-                switchParse(it)
-            }
+            switchParse(it)
         }
     }
 }
