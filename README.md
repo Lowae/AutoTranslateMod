@@ -1,5 +1,5 @@
 # AutoTranslateMod
-这是一个自动翻译Localizer Mod导出的原始文本的程序
+这是一个自动翻译Localizer Mod导出的原始文本的程序，同时能够支持跳过原有中文翻译。
 首先，先到http://api.fanyi.baidu.com/ 注册百度开发者账号（需要高级版）得到Appid和密钥（当然其他平台也行，但未支持，比如Dedpl..但是Dedpl Pro需要欧盟注册的信用卡）。
 
 方法1 ------填入Main.kt的APPID和KEY中，然后将导出后的文本放入srcFiles目录中
