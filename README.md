@@ -14,7 +14,7 @@
 <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/2.PNG" >
 </div>
-日志输出如下，文件名------表示当前文件，result16正常翻译，之后该文件翻译完成后输出日志如下
+日志输出如下，{原文} ----- {机翻后文本}，之后该文件翻译完成后输出日志如下
 <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/3.PNG" >
 </div>
