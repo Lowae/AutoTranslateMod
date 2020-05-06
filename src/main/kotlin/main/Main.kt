@@ -56,11 +56,13 @@ class Translate(
     /**
      * 匹配中文，如果有翻译则跳过
      */
-    private val p: Pattern = Pattern.compile("[\u4e00-\u9fa5]")
+    private val ChineseMatch: Pattern = Pattern.compile("[\u4e00-\u9fa5]")
+    private val ContentMatch =
+        Pattern.compile("(?:LegacyInterface.28|RedePlayer|\\[|\\]|\\\\|/)", Pattern.CASE_INSENSITIVE)
 
-    private val LdstrFilsMaths = arrayListOf<String>(
-        "Chat"
-    )
+    private val NameMatch = Pattern.compile("(?:Chat|UpdateArmorSet)", Pattern.CASE_INSENSITIVE)
+
+    private val PassMatch = Pattern.compile("(?:Chat)")
 
     private fun getJson(path: String): StringBuilder {
         try {
@@ -135,7 +137,6 @@ class Translate(
     private fun md5(str: String): String {
         val digest = MessageDigest.getInstance("MD5")
         val result = digest.digest(str.toByteArray())
-        println("result${result.size}")
         return toHex(result)
     }
 
@@ -187,18 +188,18 @@ class Translate(
             val jo1 = jo.getJSONObject(k.next())
             jo1.keys().forEach {
                 val index = it.lastIndexOf("::")
-                val matchStr = it.substring(index + 2, it.length).split('(')[0]
-                println(matchStr)
-                if (LdstrFilsMaths.contains(matchStr) || matchStr.contains("Chat")) {
+                val matchStr = it.substring(index + 2, it.length)
+                if (NameMatch.matcher(matchStr).find()) {
                     val item = jo1.getJSONObject(it)
                     val instructions = item.getJSONArray("Instructions")
                     for (i in 0 until instructions.length()) {
                         val jsonObj = instructions.getJSONObject(i)
                         val origin = jsonObj.getString("Origin")
-                        val trans = jsonObj.getString("Translation")
-                        if (origin.contains('/'))return@forEach
+                        if (ContentMatch.matcher(origin).find() && !PassMatch.matcher(matchStr).find()) return@forEach
+                        val result = if (ChineseMatch.matcher(jsonObj.getString("Translation"))
+                                .find()
+                        ) return@forEach else getResponse(getHttpUrl(origin))
                         val startTime = System.currentTimeMillis()
-                        val result = if (p.matcher(trans).find()) return@forEach else getResponse(getHttpUrl(origin))
                         val sb = StringBuilder()
                         val arr = JSONArray(JSONObject(result).optString("trans_result"))
                         for (item in 0 until arr.length()) {
@@ -207,10 +208,9 @@ class Translate(
                                 sb.append("\n")
                             }
                         }
-                        jsonObj.put(
-                            "Translation",
-                            sb.append("\n" + origin)
-                        )
+
+                        standardTrans(jsonObj, origin, sb)
+
                         val gapTime = System.currentTimeMillis() - startTime
                         Thread.sleep(
                             if (gapTime > 100) 0 else gapTime
@@ -242,13 +242,13 @@ class Translate(
                 val secondTrans = nameJson.optString("Translation")
                 val startTime = System.currentTimeMillis()
                 val originResult =
-                    if (p.matcher(firstTrans).find()) "" else getResponse(getHttpUrl(first))
+                    if (ChineseMatch.matcher(firstTrans).find()) "" else getResponse(getHttpUrl(first))
                 val endTime = System.currentTimeMillis() - startTime
                 Thread.sleep(
                     if (endTime > 100) 0 else 100 - endTime//百度Api限制1秒10次
                 )
                 val nextResult =
-                    if (p.matcher(secondTrans).find() || isSkipNext) "" else getResponse(
+                    if (ChineseMatch.matcher(secondTrans).find() || isSkipNext) "" else getResponse(
                         getHttpUrl(second)
                     )
                 if (originResult.isNotBlank()) {
@@ -260,6 +260,7 @@ class Translate(
                             sb.append("\n")
                         }
                     }
+                    println("$first ----- $sb")
                     nameJson.put(
                         "Translation",
                         sb.append("\n" + first)
@@ -274,6 +275,7 @@ class Translate(
                             sb.append("\n")
                         }
                     }
+                    println("$second ----- $sb")
                     nextJson?.put(
                         "Translation",
                         sb.append("\n" + second)
@@ -289,6 +291,28 @@ class Translate(
         }
 
     }
+
+    private fun standardTrans(jsonObj: JSONObject, origin: String, trans: StringBuilder) {
+
+        println("$origin ----- $trans")
+        print("是否翻译该项Y/N：")
+        val isPut = readLine()?.trim()
+        if (isPut == "Y" || isPut == "y") {
+            jsonObj.put(
+                "Translation",
+                trans.append("\n" + origin)
+            )
+        } else {
+            println("输入优化后翻译:")
+            val opt = readLine()
+            jsonObj.put(
+                "Translation",
+                "$opt\n$origin"
+            )
+        }
+
+    }
+
 }
 
 
