@@ -11,7 +11,7 @@
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/1.PNG" height="330" width="190" >
 </div>
 
-随后run ,会自动翻译到targetFiles目录下，目前LdstrFile.json大部分对话已经能自动翻译，若有没有翻译的提Issue，我再补充
+随后run ,会自动翻译到targetFiles目录下，目前LdstrFile.json大部分对话已经能自动翻译，若有没有翻译的提Issue（或是联系QQ邮箱：1538196177@qq.com，勿直接加好友），我再补充
 
 ## 方法2 ------ (需至少安装JRE:https://www.oracle.com/java/technologies/javase-jre8-downloads.html 下载Windows对应exe文件)
  - 将根目录AutoTranslateMod-1.0-SNAPSHOT.jar文件移到任意地方(不移也行)
