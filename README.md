@@ -24,7 +24,7 @@
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/image0x3.PNG" >
 </div>
 
- - ### 将Source/mod的名字/里面的全部文件复制到exe所在目录下的刚创建的srcFiles文件里。运行exe即可，之后按提示操作
+ - ### 将Source/mod的名字/里面的全部文件复制到exe所在目录下的刚创建的srcFiles文件里。运行exe即可，之后按提示操作，如果不动了就敲下回车键吧
  
  <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/image0x4.PNG" >
