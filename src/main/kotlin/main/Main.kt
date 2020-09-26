@@ -14,16 +14,21 @@ import kotlin.random.Random
 const val BAIDU_API = "http://api.fanyi.baidu.com/api/trans/vip/translate"
 const val USER_AGENT =
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
-const val SRC_DIR = "/srcFiles"
-const val TARGET_DIR = "/targetFiles"
-const val APPID = "百度APPID"
-const val KEY = "百度密钥"
 
 fun main(args: Array<String>) {
+    val exePath = System.getProperty("exe.path")
+    println("当前执行目录：$exePath")
+
+    println("APPID：")
+    val appid = readLine() ?: ""
+    println("密钥：")
+    val key = readLine() ?: ""
+
     val apiType = Translate.ApiType.BAIDU
-    val srcDir = "src$SRC_DIR"
-    val targetDir = "src$TARGET_DIR"
-    Translate(apiType, srcDir, targetDir).apply {
+    val srcDir = "$exePath/srcFiles"
+    val targetDir = "$exePath/targetFiles"
+
+    Translate(apiType, appid, key, srcDir, targetDir).apply {
         println(srcDir)
         File(srcDir).list()?.forEach {
             println("$it ${"-".repeat(30)}")
@@ -32,7 +37,13 @@ fun main(args: Array<String>) {
     }
 }
 
-class Translate(private val apiType: ApiType, private val srcDir: String, private val targetDir: String) {
+class Translate(
+    private val apiType: ApiType,
+    private val APPID: String,
+    private val KEY: String,
+    private val srcDir: String,
+    private val targetDir: String
+) {
     enum class ApiType {
         BAIDU
     }
@@ -67,7 +78,7 @@ class Translate(private val apiType: ApiType, private val srcDir: String, privat
         }
     }
 
-    fun getHttpUrl(content: String?): String {
+    private fun getHttpUrl(content: String?): String {
         if (content.isNullOrBlank()) {
             return ""
         }
@@ -203,6 +214,10 @@ class Translate(private val apiType: ApiType, private val srcDir: String, privat
                 }
             }
             val joS = jo.toString()
+            val target = File(targetDir)
+            if (!target.exists() && !target.isDirectory) {
+                target.mkdir()
+            }
             File(targetDir, path.split("/").last()).printWriter().use {
                 it.println(joS)
             }
@@ -210,7 +225,7 @@ class Translate(private val apiType: ApiType, private val srcDir: String, privat
         }
     }
 
-    fun parseJson(path: String, isSkipNext: Boolean = false, nextName: String = "") {
+    private fun parseJson(path: String, isSkipNext: Boolean = false, nextName: String = "") {
         val s = getJson(path).toString()
         val jo = JSONObject(s)
         val k = jo.keys()
