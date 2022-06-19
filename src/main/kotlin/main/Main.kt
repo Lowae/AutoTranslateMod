@@ -16,22 +16,29 @@ const val USER_AGENT =
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
 
 fun main(args: Array<String>) {
-    val exePath = System.getProperty("exe.path")
-    println("当前执行目录：$exePath")
-
+    println("源文件目录：")
+    val srcDir = File(readLine().orEmpty()).let { inFile ->
+        if (inFile.exists()) inFile.absolutePath
+        else throw IllegalArgumentException("输入文件路径错误")
+    }
+    println("Input Dir: $srcDir")
+    println("输出文件目录(默认同层级，enter默认)：")
+    val targetDir = readLine().let { outFile ->
+        if (outFile.isNullOrBlank().not()) outFile.toString()
+        else srcDir.substring(0, srcDir.lastIndexOf("\\")) + "\\out"
+    }
+    println("Output Dir: $targetDir")
     println("APPID：")
     val appid = readLine() ?: ""
     println("密钥：")
     val key = readLine() ?: ""
 
     val apiType = Translate.ApiType.BAIDU
-    val srcDir = "$exePath/srcFiles"
-    val targetDir = "$exePath/targetFiles"
 
     Translate(apiType, appid, key, srcDir, targetDir).apply {
         println(srcDir)
         File(srcDir).list()?.forEach {
-            println("$it ${"-".repeat(30)}")
+            println("${"-".repeat(30)} 当前翻译文件：$it ${"-".repeat(30)}")
             switchParse(it)
         }
     }
@@ -154,22 +161,22 @@ class Translate(
     fun switchParse(fileName: String) {
         when (fileName) {
             "BasicBuffFile.json" -> {
-                parseJson("$srcDir/BasicBuffFile.json", false, "Description")
+                parseJson("$srcDir\\BasicBuffFile.json", false, "Description")
             }
             "BasicItemFile.json" -> {
-                parseJson("$srcDir/BasicItemFile.json", false, "Tooltip")
+                parseJson("$srcDir\\BasicItemFile.json", false, "Tooltip")
             }
             "BasicNPCFile.json" -> {
-                parseJson("$srcDir/BasicNPCFile.json", true, "")
+                parseJson("$srcDir\\BasicNPCFile.json", true, "")
             }
             "BasicPrefixFile.json" -> {
-                parseJson("$srcDir/BasicPrefixFile.json", true, "")
+                parseJson("$srcDir\\BasicPrefixFile.json", true, "")
             }
             "BasicProjectileFile.json" -> {
-                parseJson("$srcDir/BasicProjectileFile.json", true, "")
+                parseJson("$srcDir\\BasicProjectileFile.json", true, "")
             }
             "LdstrFile.json" -> {
-                parseLdstrFile("$srcDir/LdstrFile.json")
+                parseLdstrFile("$srcDir\\LdstrFile.json")
             }
             else -> return
         }
@@ -218,10 +225,14 @@ class Translate(
             if (!target.exists() && !target.isDirectory) {
                 target.mkdir()
             }
-            File(targetDir, path.split("/").last()).printWriter().use {
+            File(targetDir).apply { if (isDirectory && exists()) return@apply else mkdir() }
+            File(targetDir, path.split("\\").last()).apply {
+                if (exists().not()) createNewFile()
+            }.printWriter().use {
                 it.println(joS)
             }
-            println("Json --- Completed !\n $joS")
+            println("${"-".repeat(30)} 翻译文件完成：$path ${"-".repeat(30)}")
+            println("文本如下：\n$joS")
         }
     }
 
@@ -283,10 +294,14 @@ class Translate(
                 }
             }
             val joS = jo.toString()
-            File(targetDir, path.split("/").last()).printWriter().use {
+            File(targetDir).apply { if (exists()) return@apply else mkdir() }
+            File(targetDir, path.split("\\").last()).apply {
+                if (exists().not()) createNewFile()
+            }.printWriter().use {
                 it.println(joS)
             }
-            println("Json --- Completed !\n $joS")
+            println("${"-".repeat(30)} 翻译文件完成：$path ${"-".repeat(30)}")
+            println("文本如下：\n$joS")
         }
 
     }
