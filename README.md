@@ -3,7 +3,7 @@
 若不显示图片需科学上网
 
 这是一个自动翻译Localizer Mod导出的原始文本的程序，同时能够支持跳过原有中文翻译。
-首先，先到http://api.fanyi.baidu.com/ 注册百度开发者账号（需要高级版,免费）得到Appid和密钥（当然其他平台也行，但未支持）。
+首先，先到http://api.fanyi.baidu.com/ 注册百度开发者账号（需要高级版,免费）得到Appid和密钥。
 
 ------------ 
 
@@ -24,7 +24,7 @@
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/image0x3.PNG" >
 </div>
 
- - ### 将Source/mod的名字/里面的全部文件复制到exe所在目录下的刚创建的srcFiles文件里。运行exe即可，之后按提示操作
+ - ### 将Source/mod的名字/里面的全部文件复制到exe所在目录下的刚创建的srcFiles文件里。运行exe即可，之后按提示操作，如果不动了就敲下回车键吧
  
  <div align="center">
 <img src="https://github.com/cllh1999/AutoTranslateMod/blob/master/images/image0x4.PNG" >
